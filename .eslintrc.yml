@@ -1,1 +1,4 @@
 extends: airbnb-base
+globals:
+  webkitSpeechRecognition: true
+  SpeechRecognition: true
