@@ -16,7 +16,7 @@ npm i -S grumbles
 ### CDN (UMD)
 
 ```html
-<script src="https://unpkg.com/grumbles@1.0.0-alpha.2"></script>
+<script src="https://unpkg.com/grumbles@1.0.0"></script>
 ```
 
 ## Usage
