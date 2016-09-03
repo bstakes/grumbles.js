@@ -1,8 +1,10 @@
+const _ = require('lodash');
 const path = require('path');
+const BabiliWebpackPlugin = require('babili-webpack-plugin');
 
-module.exports = {
+const baseConfig = {
   entry: {
-    grumbles: ['./src/index.js'],
+    grumbles: ['./src/grumbles.js'],
   },
   output: {
     library: 'grumbles',
@@ -19,3 +21,14 @@ module.exports = {
     }],
   },
 };
+
+const minConfig = _.merge({}, baseConfig, {
+  output: {
+    filename: 'grumbles.min.js',
+  },
+  plugins: [
+    new BabiliWebpackPlugin(),
+  ]
+});
+
+module.exports = [baseConfig, minConfig];
