@@ -1,7 +1,7 @@
 {
   "name": "grumbles",
   "version": "0.0.0",
-  "description": "Audible swear word detector.",
+  "description": "Detect when your users are upset.",
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack",
