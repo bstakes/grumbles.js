@@ -39,13 +39,18 @@ npm i -S grumbles
 //   1. A function to call when a grumble is detected.
 //   2. An optional string to set the language for
 //      SpeechRecognition (defaults to 'en')
+
 const stop = grumbles(({ word, context, time }) => {
   // The function is passed an object containing the word which
   // was grumbled as well as the context (full phrase containing
   // the grumble). You also get a JavaScript timestamp indicating
-  // when the grumble was detected.
+  // when the grumble was grumbled.
+  // At this point you can do whatever you want. Like log the grumble
+  // so you can measure grumbles / minute. Or open up a help dialog.
 });
+
 // The grumbles function returns a function that will stop listening.
+// Call this if you ever want to stop listening.
 stop();
           </code></pre>
           <h3>Demo: Grumble Log</h3>
