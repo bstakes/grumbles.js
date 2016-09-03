@@ -5,7 +5,7 @@
   "main": "dist/grumbles.min.js",
   "jsnext:main": "src/grumbles.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --progress",
     "start": "webpack-dev-server --content-base test",
     "test": "eslint src",
     "prepublish": "npm run build"
