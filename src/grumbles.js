@@ -1,10 +1,8 @@
-import fp from 'lodash/fp';
-
 // Deprefix the speech recongition constructor
 const SR = webkitSpeechRecognition || SpeechRecognition;
 
 // Gets the latest transcript out of a continuous SpeechRecognitionResultList
-const getLatest = fp.flow(fp.last, fp.head, fp.get('transcript'));
+const getLatest = list => list[list.length - 1][0].transcript;
 
 /**
  * @param {function} onGrumble - Function to call when a grumble is detected.
