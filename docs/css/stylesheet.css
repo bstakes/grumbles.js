@@ -52,7 +52,6 @@ body {
   font-size: 1em;
   line-height: 1.5;
   color: #6d6d6d;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
 }
 
@@ -90,7 +89,7 @@ header h2 {
 }
 
 .inner {
-  width: 620px;
+  width: 675px;
   margin: 0 auto;
 }
 
@@ -148,39 +147,18 @@ a.button span {
   padding-left: 50px;
 }
 
-code, pre {
-  margin-bottom: 30px;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
-  font-size: 14px;
-  color: #222;
-}
-
-code {
-  padding: 0 3px;
-  background-color: #f2f2f2;
-  border: solid 1px #ddd;
-}
-
-pre {
-  padding: 20px;
-  overflow: auto;
-  color: #f2f2f2;
-  text-shadow: none;
-  background: #303030;
-}
-pre code {
-  padding: 0;
-  color: #f2f2f2;
-  background-color: #303030;
-  border: none;
-}
-
 ul, ol, dl {
   margin-bottom: 20px;
 }
 
+code, pre {
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
+}
 
-/* COMMON STYLES */
+code.hljs {
+  padding: 0 20px;
+}
+
 
 hr {
   height: 1px;
