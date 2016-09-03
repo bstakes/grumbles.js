@@ -17,6 +17,7 @@ export default (onGrumble, lang = 'en') => {
   rec.continuous = true;
   // Define the grumble detection pipeline
   rec.onresult = ({ results }) => {
+    const time = Date.now();
     const context = getLatest(results);
     // Latest words
     context.split(/\s+/g)
@@ -26,7 +27,7 @@ export default (onGrumble, lang = 'en') => {
       .forEach(word => onGrumble({
         word,
         context,
-        time: Date.now(),
+        time,
       }));
   };
   // Start the grumble detection pipeline
