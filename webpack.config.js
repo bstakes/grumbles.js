@@ -3,6 +3,7 @@ const path = require('path');
 const BabiliWebpackPlugin = require('babili-webpack-plugin');
 
 const baseConfig = {
+  devtool: 'source-map',
   entry: {
     grumbles: ['./src/grumbles.js'],
   },
