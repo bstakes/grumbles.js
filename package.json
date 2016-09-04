@@ -14,6 +14,8 @@
     "prepublish": "npm run build"
   },
   "author": "Kenneth Powers <ken@kenpowers.net> (http://knpw.rs)",
+  "homepage": "http://knpw.rs/grumbles.js",
+  "repository": "knpwrs/grumbles.js",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.14.0",
