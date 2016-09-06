@@ -6,7 +6,7 @@ const getLatest = list => list[list.length - 1][0].transcript;
 
 /**
  * @param {function} onGrumble - Function to call when a grumble is detected.
- * @param {string} lang - Language to detect grubmles in. Defaults to 'en'.
+ * @param {string} lang - Language to detect grumbles in. Defaults to 'en'.
  */
 export default (onGrumble, lang = 'en') => {
   // Attempt to create a recongizer
